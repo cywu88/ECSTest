@@ -24,7 +24,9 @@ public class Testing : MonoBehaviour
         EntityArchetype entityArchetype = entityManager.CreateArchetype(
            typeof(LevelComponent),
            typeof(Translation),
-           typeof(RenderMesh), 
+           typeof(RenderMesh),
+           //https://answers.unity.com/questions/1701725/ecs-rendermesh-not-work.html
+           typeof(RenderBounds),   
            typeof(LocalToWorld),
            typeof(MoveSpeedComponent)
         );
